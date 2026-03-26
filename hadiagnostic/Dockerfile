@@ -9,6 +9,6 @@ COPY requirements.txt /tmp/
 RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
 
 COPY run.py /
-COPY hadiagnostic/ /hadiagnostic/
+COPY diagnostic/ /diagnostic/
 
 CMD ["python3", "/run.py"]
