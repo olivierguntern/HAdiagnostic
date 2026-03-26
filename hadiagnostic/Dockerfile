@@ -1,12 +1,8 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-# Install pip if not already present
-RUN apk add --no-cache py3-pip
-
-# Copy and install Python dependencies
-COPY requirements.txt /tmp/
-RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt
+# Installer Python et les dépendances via apk (évite les problèmes pip/PEP668)
+RUN apk add --no-cache python3 py3-requests py3-flask
 
 # Copy project files
 COPY run.py /
