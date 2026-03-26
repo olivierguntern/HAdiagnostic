@@ -1,0 +1,16 @@
+name: "HA Diagnostic"
+version: "0.1.0"
+slug: "hadiagnostic"
+description: "Diagnostique les erreurs et les add-ons Home Assistant qui ne démarrent pas"
+url: "https://github.com/olivierguntern/HAdiagnostic"
+arch:
+  - amd64
+  - armv7
+  - aarch64
+  - i386
+startup: once
+boot: manual
+hassio_api: true
+hassio_role: manager
+options: {}
+schema: {}
