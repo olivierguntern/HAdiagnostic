@@ -6,7 +6,7 @@ RUN apk add --no-cache py3-pip
 
 # Copy and install Python dependencies
 COPY requirements.txt /tmp/
-RUN pip3 install --no-cache-dir -r /tmp/requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages -r /tmp/requirements.txt
 
 # Copy project files
 COPY run.py /
