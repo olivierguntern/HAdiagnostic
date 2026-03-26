@@ -1,5 +1,5 @@
 name: "HA Diagnostic"
-version: "0.1.0"
+version: "0.2.0"
 slug: "hadiagnostic"
 description: "Diagnostique les erreurs et les add-ons Home Assistant qui ne démarrent pas"
 url: "https://github.com/olivierguntern/HAdiagnostic"
